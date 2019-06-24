@@ -31,7 +31,7 @@ export default class AddFolder extends Component {
       })
       .then(folder => {
         this.context.addFolder(folder)
-        this.props.history.push(`/folder/${folder.id}`)
+        this.props.history.push(`/folders/${folder.id}`)
       })
       .catch(error => {
         console.error({ error })
